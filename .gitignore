@@ -3,6 +3,7 @@ modal-logic-verona-2.tex
 modal-logic-verona-3.tex
 modal-logic-verona-4.tex
 modal-logic-verona-5.tex
+.DS_Store
 *.aux
 *.log
 *.pdf
