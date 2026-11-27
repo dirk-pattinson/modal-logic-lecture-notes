@@ -5,8 +5,30 @@
 \usepackage{enumitem}
 \setlist{itemsep=3pt, topsep=3pt}%\setlist{nosep}
 \usepackage[left=1.25in, right=1.25in, top=1in, bottom=1in]{geometry}
-\input{meineamstheorems.tex}
 
+%%% Theorem-styles thm, lemma, propn, cor, defn, example, remark, notn
+\usepackage{amsthm}
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{lemmadef}[thm]{Lemma and Definition}
+\newtheorem{fact}[thm]{Fact}
+\newtheorem{propn}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{bummer}[thm]{Bummer}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{example}[thm]{Example}
+\newtheorem{exercise}[thm]{Exercise}
+\newtheorem{constrn}[thm]{Construction}
+\newtheorem{question}[thm]{Question}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{notn}[thm]{Notation}
+\newtheorem{conv}[thm]{Convention}
+\newtheorem{term}[thm]{Terminology}
+\newcounter{assumption}
+\newtheorem{assn}[assumption]{Assumption}
 \newcommand{\seq}{\Longrightarrow}
 \newcommand{\lsem}{\llbracket}
 \newcommand{\rsem}{\rrbracket}
